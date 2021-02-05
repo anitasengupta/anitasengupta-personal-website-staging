@@ -1,2 +1,2 @@
-# anitasengupta-personal-website-staging
+# staging-anitasengupta-personal-website
 Staging for website
