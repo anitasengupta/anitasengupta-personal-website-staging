@@ -3,6 +3,7 @@
 html {
 	scroll-behavior: smooth;
 }
+
 /* fixed elements */
 	/* name in nav */
 	#name {
@@ -64,6 +65,16 @@ html {
 	.control ul li.selected {
 		opacity: 1;
 		transition:  opacity .2s ease-in 0s;
+	}
+
+	/* canvas */
+	canvas {
+		width: 100vh;
+		height: 100vh;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: -1;
 	}
 
 /* grid elements */
