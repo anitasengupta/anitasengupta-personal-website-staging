@@ -31,7 +31,7 @@ html {
 		opacity:  0;
 		height:  0px;
 		position:  fixed;
-		bottom:  196px;
+		bottom:  148px;
 		right:  27px;
 	}
 
@@ -242,7 +242,7 @@ html {
 		.footnote-caption {
 			font-family: monospace;
 			color: black;
-			font-size: 1.3em;	
+			font-size: 1.3em;
 			line-height: 1.6em;
 			margin:  0px 0px 12px 0px;
 			width: 85%;
