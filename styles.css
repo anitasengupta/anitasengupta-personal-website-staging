@@ -8,6 +8,24 @@ body {
 	margin: 0px;
 }
 
+#name {
+	position:  fixed;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	font-family: sans-serif;
+	color: black;
+	font-size: 1.625rem;
+}
+
+#content {
+	position: fixed;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	font-family: sans-serif;
+	color: black;
+
+}
+
 /* links */
 a {
 	text-decoration: none;
@@ -28,26 +46,15 @@ a:visited {
 /* small mobile styles */
 @media only screen and (max-width: 375px) {
 	#name {
-		position:  fixed;
 		bottom:  16px;
 		right:  16px;
-		font-family: sans-serif;
-		color: black;
-		font-size: 1.625rem;
-		margin-block-start: 0em;
-		margin-block-end: 0em;
 	}
 
 	#content {
-		font-family: sans-serif;
-		color: black;
 		font-size: 1.625rem;
-		position: fixed;
 		top:  16px;
 		left:  16px;
 		right: 16px;
-		margin-block-start: 0em;
-		margin-block-end: 0em;
 		width: auto;
 	}
 }
@@ -55,25 +62,14 @@ a:visited {
 /* mobile styles */
 @media only screen and (min-width: 375px) {
 	#name {
-		position:  fixed;
 		bottom:  16px;
 		right:  16px;
-		font-family: sans-serif;
-		color: black;
-		font-size: 1.625rem;
-		margin-block-start: 0em;
-		margin-block-end: 0em;
 	}
 
 	#content {
-		font-family: sans-serif;
-		color: black;
 		font-size: 1.625rem;
-		position: fixed;
 		top:  16px;
 		left:  16px;
-		margin-block-start: 0em;
-		margin-block-end: 0em;
 		width: 353px;
 	}
 }
@@ -81,25 +77,14 @@ a:visited {
 /*tablet and desktop styles */
 @media only screen and (min-width: 768px) {
 	#name {
-		position:  fixed;
 		bottom:  32px;
 		right:  32px;
-		font-family: sans-serif;
-		color: black;
-		font-size: 1.625rem;
-		margin-block-start: 0em;
-	  margin-block-end: 0em;
 	}
 
 	#content {
-		font-family: sans-serif;
-		color: black;
 		font-size: 2.625rem;
-		position: fixed;
 		top:  32px;
 		left:  32px;
-		margin-block-start: 0em;
-	  margin-block-end: 0em;
 		width: 590px;
 	}
 }
@@ -107,25 +92,14 @@ a:visited {
 /* large desktop styles */
 @media only screen and (min-width: 1440px) {
 	#name {
-		position:  fixed;
 		bottom:  32px;
 		right:  32px;
-		font-family: sans-serif;
-		color: black;
-		font-size: 1.625rem;
-		margin-block-start: 0em;
-	  margin-block-end: 0em;
 	}
 
 	#content {
-		font-family: sans-serif;
-		color: black;
 		font-size: 3.4374rem;
-		position: fixed;
 		top:  32px;
 		left:  32px;
-		margin-block-start: 0em;
-	  margin-block-end: 0em;
 		width: 770px;
 	}
 }
