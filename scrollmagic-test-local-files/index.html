@@ -22,7 +22,15 @@
 				outline: 1px dashed orange;
 			}
 
-			#block {
+			#intro {
+				opacity: 100%;
+				color: black;
+				padding: 10px;
+				border: 1px solid black;
+				font-family: Helvetica;
+			}
+
+			#specialization {
 				opacity: 0%;
 				color: black;
 				padding: 10px;
@@ -44,10 +52,8 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="block">
-				it me
-			</div>
-		</div>
+			<div id="intro">I’m a designer based in Berlin (& sometimes New York).</div>
+			<div id="specialization">I specialize in strategy, brand creation, and user experience.</div>
 		<script>
 			// controller is the mechanism that holds animations and scroll positions together
 			$(function() {
@@ -55,9 +61,7 @@
 
 				// create blockTween variable to store tween (aka transition/animation)
 				// create new TweenMax.to object to store transition: [#idYouWantToTransition], [time in sec]. {new styles}
-				var blockTween = new TweenMax.to('#block', 1.5, {
-					// backgroundColor: 'red'
-					// color: 'black'
+				var blockTween = new TweenMax.to('#specialization', 1.5, {
 					opacity: 100
 				});
 
