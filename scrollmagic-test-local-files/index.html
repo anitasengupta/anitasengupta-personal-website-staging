@@ -23,6 +23,8 @@
 			}
 
 			#block {
+				opacity: 0%;
+				color: black;
 				padding: 10px;
 				border: 1px solid black;
 				font-family: Helvetica;
@@ -43,7 +45,7 @@
 	<body>
 		<div id="container">
 			<div id="block">
-				Hi there!
+				it me
 			</div>
 		</div>
 		<script>
@@ -54,7 +56,9 @@
 				// create blockTween variable to store tween (aka transition/animation)
 				// create new TweenMax.to object to store transition: [#idYouWantToTransition], [time in sec]. {new styles}
 				var blockTween = new TweenMax.to('#block', 1.5, {
-					backgroundColor: 'red'
+					// backgroundColor: 'red'
+					// color: 'black'
+					opacity: 100
 				});
 
 				// create scene to define at which scroll positions the tween/transition/animation plays
