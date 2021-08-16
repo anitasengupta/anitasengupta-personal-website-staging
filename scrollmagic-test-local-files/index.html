@@ -31,7 +31,7 @@
 			}
 
 			#specialization {
-				opacity: 0%;
+				opacity: 0;
 				color: black;
 				padding: 10px;
 				border: 1px solid black;
@@ -56,13 +56,17 @@
 			<div id="specialization">I specialize in strategy, brand creation, and user experience.</div>
 		<script>
 			// controller is the mechanism that holds animations and scroll positions together
-			$(function() {
+			/* $(function() {
 				var controller = new ScrollMagic.Controller();
 
 				// create blockTween variable to store tween (aka transition/animation)
 				// create new TweenMax.to object to store transition: [#idYouWantToTransition], [time in sec]. {new styles}
-				var blockTween = new TweenMax.to('#specialization', 1.5, {
-					opacity: 100
+				var introTween = new gsap.to('#intro', 1, {
+					opacity: .3
+				});
+
+				var specializationTween = new gsap.to('#specialization', 1, {
+					opacity: 1
 				});
 
 				// create scene to define at which scroll positions the tween/transition/animation plays
@@ -71,12 +75,46 @@
 				})
 
 				// setTween binds tween (blockTween) and container (containerScene) together
-				.setTween(blockTween)
+				.setTween(introTween)
+				.setTween(specializationTween)
 
 				// add indicators to help with debugging
 				.addIndicators()
 
 				//add everything to the controller (to make it work?)
+				.addTo(controller);
+			}); */
+
+			// intro sentence animation
+			$(function() {
+				var controller = new ScrollMagic.Controller();
+
+				var introTween = new gsap.to('#intro', 1, {
+					opacity: .3
+				});
+
+				var containerScene = new ScrollMagic.Scene({
+					triggerElement: '#container'
+				})
+
+				.setTween(introTween)
+				.addIndicators()
+				.addTo(controller);
+			});
+
+			// specialization sentence animation
+			$(function() {
+				var controller = new ScrollMagic.Controller();
+
+				var specializationTween = new gsap.to('#specialization', 1, {
+					opacity: 1
+				});
+
+				var containerScene = new ScrollMagic.Scene({
+					triggerElement: '#container'
+				})
+
+				.setTween(specializationTween)
 				.addTo(controller);
 			});
 		</script>
