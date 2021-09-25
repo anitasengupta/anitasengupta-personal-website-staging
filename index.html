@@ -17,17 +17,25 @@
 		<meta name="description" content="Anita Sengupta is a designer based in Berlin (& sometimes New York).">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- favicon, social previews -->
+		<meta property="og:image" content="metadata/social-share-image.png"/>
+		<link rel="icon" href="metadata/favicon.png"/>
+
   	<!-- styling & interaction -->
-  	<link rel="stylesheet" type="text/css" href="styles.css">
-
-  	<!-- favicon, social previews -->
-		<meta property="og:image" content="social-share-image.png"/>
-		<link rel="icon" href="favicon.png"/>
-
+  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="js/main.js" async></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
 	</head>
 	<body>
 		<div id="content">
-			<p>I’m a designer based in Berlin (& sometimes New York). I specialize in strategy, brand creation, and user experience. I'm interested in consciously building a reimagined future. I'm currently supporting <a href="https://tzconnect.com/en/" target="_blank">open-source projects on the Tezos blockchain</a> & contributing to a <a href="https://www.joyspace.berlin/" target="_blank">feminist wellness collective</a>. Contact me at <a href="mailto:anita.m.sengupta@gmail.com">anita.m.sengupta<wbr>@gmail.com</a>.
+			<span id="intro">I’m a designer based in Berlin (& sometimes New York).</span>
+			<span id="specialization"> I specialize in strategy, brand creation, and user experience.</span>
+			<span id="work"> I'm interested in consciously building a reimagined future. I'm currently supporting <a href="https://tzconnect.com/en/" target="_blank">open-source projects on the Tezos blockchain</a> & contributing to a <a href="https://www.joyspace.berlin/" target="_blank">feminist wellness collective</a>.</span>
+			<span id="contact"> Contact me at <a href="mailto:anita.m.sengupta@gmail.com">anita.m.sengupta<wbr>@gmail.com</a>.</span>
 		</div>
 		<p id="name">Anita<br>Sengupta</p>
 	</body>
