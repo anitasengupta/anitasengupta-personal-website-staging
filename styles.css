@@ -81,6 +81,39 @@ a:visited {
   color: black;
 }
 
+/* indicators */
+.indicators {
+  display: grid;
+  grid-template-columns: 6.4375rem 1rem;
+  grid-template-rows: 1rem 1rem 1rem 1rem;
+  grid-gap: 0.75rem .75rem;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  bottom:  32px;
+  right: 32px;
+}
+
+.indicators p {
+  align-self: center;
+  font-family: ABCWhyte, sans-serif;
+  color:  black;
+  font-size:  1em;
+  text-align: right;
+}
+
+.indicators div {
+  justify-self: center;
+  align-self: center;
+  height: .75rem;
+  width: .75rem;
+  background-color: black;
+  border-color: black;
+  opacity: 0.3;
+  border: 1px;
+  margin:  0px 0px 0px 0px;
+}
+
 /* animation triggers */
 .trigger-offset {
   height: 55vh;
@@ -95,7 +128,7 @@ a:visited {
 @media only screen and (max-width: 375px) {
 	#name {
 		bottom:  16px;
-		right:  16px;
+		left:  16px;
 	}
 
 	#content {
@@ -111,7 +144,7 @@ a:visited {
 @media only screen and (min-width: 375px) {
 	#name {
 		bottom:  16px;
-		right:  16px;
+		left:  16px;
 	}
 
 	#content {
@@ -126,7 +159,7 @@ a:visited {
 @media only screen and (min-width: 560px) {
 	#name {
 		bottom:  32px;
-		right:  32px;
+		left:  32px;
 	}
 
 	#content {
@@ -141,7 +174,7 @@ a:visited {
 @media only screen and (min-width: 768px) {
 	#name {
 		bottom:  32px;
-		right:  32px;
+		left:  32px;
 	}
 
 	#content {
@@ -156,7 +189,7 @@ a:visited {
 @media only screen and (min-width: 1440px) {
 	#name {
 		bottom:  32px;
-		right:  32px;
+		left:  32px;
 	}
 
 	#content {
