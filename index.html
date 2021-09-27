@@ -22,13 +22,17 @@
 		<link rel="icon" href="metadata/favicon.png"/>
 
   	<!-- styling & interaction -->
-  	<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<script type="text/javascript" src="js/main.js" async></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+
+		<!-- newer versions of jQuery, GSAP, ScrollMagic -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js" integrity="sha512-UgS0SVyy/0fZ0i48Rr7gKpnP+Jio3oC7M4XaKP3BJUB/guN6Zr4BjU0Hsle0ey2HJvPLHE5YQCXTDrx27Lhe7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<!-- my js file -->
+		<script type="text/javascript" src="main.js" async></script>
 	</head>
 	<body>
 		<div id="content">
@@ -38,5 +42,15 @@
 			<span id="contact"> Contact me at <a href="mailto:anita.m.sengupta@gmail.com">anita.m.sengupta<wbr>@gmail.com</a>.</span>
 		</div>
 		<p id="name">Anita<br>Sengupta</p>
+		<div id="triggers">
+			<div class="trigger-offset"></div>
+	    <div class="trigger" id="one"></div>
+	    <div class="trigger" id="two"></div>
+	    <div class="trigger" id="three"></div>
+			<div class="trigger" id="four"></div>
+	    <div class="trigger" id="five"></div>
+	    <div class="trigger" id="six"></div>
+			<div class="trigger-offset"></div>
+		</div>
 	</body>
 </html>
